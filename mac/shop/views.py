@@ -1,7 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import product
+from math import ceil
 
 def index(request):
+    products = product.objects.all()
+    print(products)
+    n = len(products)
+    nSlides = n//4 + ceil( n/4 - (n//4))
+    params = {'nSlides':nSlides,'product':products,'range':range(1,nSlides)}
     return render(request,'shop/index.html')
 
 def about(request):
