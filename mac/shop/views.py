@@ -1,42 +1,45 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .models import product
 from math import ceil
 
-def index(request):
-    products = product.objects.all()
-    # print(products)
+# Create your views here.
+from django.http import HttpResponse
 
-    # params = {'nSlides':nSlides,'product':products,'range':range(1,nSlides)}
-    # allProds=[[products,range(1,nSlides),nSlides],
-    #           [products, range(1, nSlides), nSlides]
-    #           ]
+def index(request):
+    # products = Product.objects.all()
+    # print(products)
+    # n = len(products)
+    # nSlides = n//4 + ceil((n/4)-(n//4))
+
     allProds = []
-    catProds = product.objects.values('category','id')
-    cats={item['category'] for item in catProds}
+    catprods = product.objects.values('category', 'id')
+    cats = {item['category'] for item in catprods}
     for cat in cats:
-        prod = product.objects.filter(category = cat)
-        n = len(products)
-        nSlides = n // 4 + ceil(n / 4 - (n // 4))
-        allProds.append([prod,range(1,nSlides),nSlides])
-    params={'allProds':allProds}
-    return render(request,'shop/index.html',params)
+        prod = product.objects.filter(category=cat)
+        n = len(prod)
+        nSlides = n // 4 + ceil((n / 4) - (n // 4))
+        allProds.append([prod, range(1, nSlides), nSlides])
+
+    # params = {'no_of_slides':nSlides, 'range': range(1,nSlides),'product': products}
+    # allProds = [[products, range(1, nSlides), nSlides],
+    #             [products, range(1, nSlides), nSlides]]
+    params = {'allProds':allProds}
+    return render(request, 'shop/index.html', params)
 
 def about(request):
     return render(request, 'shop/about.html')
 
 def contact(request):
-    return HttpResponse("contact page")
+    return render(request, 'shop/contact.html')
 
 def tracker(request):
-    return HttpResponse("tracker page")
+    return render(request, 'shop/tracker.html')
 
 def search(request):
-    return HttpResponse("search page")
+    return render(request, 'shop/search.html')
 
 def productView(request):
-    return HttpResponse("productView page")
+    return render(request, 'shop/prodView.html')
 
 def checkout(request):
-    return HttpResponse("checkout page")
-
+    return render(request, 'shop/checkout.html')
