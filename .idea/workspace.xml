@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f729a06-59d1-471a-8e7c-de5c571b3b68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac/shop/templates/shop/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/mac/shop/templates/shop/checkout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,14 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mac/shop/templates/shop/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="157" column="14" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
+            <state relative-caret-position="463">
+              <caret line="157" selection-start-line="157" selection-end-line="157" selection-end-column="14" />
               <folding>
                 <element signature="e#1507#1528#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mac/shop/templates/shop/checkout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -53,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/mac/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -140,7 +149,6 @@
         <option value="$PROJECT_DIR$/mac/blog/templates/blog/index.html" />
         <option value="$PROJECT_DIR$/mac/mac/settings.py" />
         <option value="$PROJECT_DIR$/mac/mac/urls.py" />
-        <option value="$PROJECT_DIR$/mac/shop/templates/shop/checkout.html" />
         <option value="$PROJECT_DIR$/mac/shop/templates/shop/search.html" />
         <option value="$PROJECT_DIR$/mac/shop/templates/shop/tracker.html" />
         <option value="$PROJECT_DIR$/mac/shop/urls.py" />
@@ -152,6 +160,7 @@
         <option value="$PROJECT_DIR$/mac/shop/templates/shop/contact.html" />
         <option value="$PROJECT_DIR$/mac/shop/admin.py" />
         <option value="$PROJECT_DIR$/mac/shop/templates/shop/index.html" />
+        <option value="$PROJECT_DIR$/mac/shop/templates/shop/checkout.html" />
       </list>
     </option>
   </component>
@@ -248,7 +257,7 @@
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21752739" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21752739" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mac/shop/templates/shop/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mac/shop/templates/shop/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -395,8 +397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mac/shop/templates/shop/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="157" column="14" selection-start-line="157" selection-start-column="14" selection-end-line="157" selection-end-column="14" />
+        <state relative-caret-position="463">
+          <caret line="157" selection-start-line="157" selection-end-line="157" selection-end-column="14" />
           <folding>
             <element signature="e#1507#1528#0" expanded="true" />
           </folding>
@@ -423,7 +425,7 @@
     <entry file="file://$PROJECT_DIR$/mac/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -461,6 +463,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mac/shop/templates/shop/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="66" column="14" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
         </state>
       </provider>
     </entry>
